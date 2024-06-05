@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int b,a,c;
+    scanf("%d%d%d",&b,&a,&c);
+    int t=a*75+c*30;
+    if(t<=b)
+    {
+        printf("Boat is stable");
+    }
+    else
+    {
+      printf("Boat will drown"); 
+    }
+        
+    return 0;
+}
