@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ 
+    char s[50];
+    int i,hash=0,star=0;
+    scanf("%s",s);
+    for(i=0;s[i]!='\0';i++)
+    {
+        if(s[i]==35)
+        {
+            hash++;
+        }
+        else if(s[i]==42)
+        {
+            star++;
+        }
+    }
+        if(star==hash)
+        {
+            printf("0");
+        }
+        else if(star<hash)
+        {
+            printf("-%d",star);
+        }
+        else
+        {
+            printf("%d",hash);
+        }
+    
+    return 0;
+}
