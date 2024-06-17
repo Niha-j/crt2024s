@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    char s[200];
+    int i;
+    scanf("%s",s);
+    for(i=0;s[i]!='\0';i++)
+    {
+        if(i%2==0)
+        {
+            printf("%d %c\n",i,s[i]);
+        }
+    }
+    
+    return 0;
+}
